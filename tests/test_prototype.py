@@ -6,6 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.orchestrator.orchestrator import Orchestrator
 from src.agents.base_agent import BaseAgent, Task
+from src.agents.creative_agent import CreativeAgent
 from src.memory.memory_manager import MemoryManager
 
 class MockAgent(BaseAgent):
@@ -27,9 +28,11 @@ def main():
     # Register Agents
     researcher = MockAgent("Dr. Know", "researcher")
     coder = MockAgent("Bit Buddy", "coder")
+    creative = CreativeAgent("Muse", orchestrator.config["asset_paths"]["music"])
 
     orchestrator.register_agent(researcher)
     orchestrator.register_agent(coder)
+    orchestrator.register_agent(creative)
 
     # Route Tasks
     print("\nRouting Task 1...")
@@ -40,9 +43,13 @@ def main():
     res2 = orchestrator.route_task("Write engine initialization script", "coder")
     print(f"Task 2 Status: {res2.status}, Result: {res2.result}")
 
-    print("\nRouting Task 3 (Should Fail)...")
-    res3 = orchestrator.route_task("Design character art", "artist")
+    print("\nRouting Task 3...")
+    res3 = orchestrator.route_task("Generate radio broadcast music loop", "creative")
     print(f"Task 3 Status: {res3.status}, Result: {res3.result}")
+
+    print("\nRouting Task 4 (Should Fail)...")
+    res4 = orchestrator.route_task("Design character art", "artist")
+    print(f"Task 4 Status: {res4.status}, Result: {res4.result}")
 
     # Verify Memory
     print("\n--- Shared Memory Logs ---")

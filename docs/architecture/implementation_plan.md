@@ -3,8 +3,8 @@
 ## Phase 1: Foundation (Current)
 - [x] Design system architecture.
 - [x] Select initial tools and frameworks.
-- [ ] Develop the core Orchestrator prototype.
-- [ ] Implement basic shared memory (local file-based).
+- [x] Develop the core Orchestrator prototype.
+- [x] Implement basic shared memory (local file-based).
 
 ## Phase 2: Agent Development
 - [ ] Implement the `Reasoning Agent` (Planning).

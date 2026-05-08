@@ -23,7 +23,12 @@ Amigo/X4ra is a decentralized, hybrid AI system designed for advanced research, 
 - **Storage**: Vector database for embeddings, file system for project artifacts, and relational database for session logs.
 - **Version Control**: Git-integrated history for all project files.
 
-## 3. Operational Modes
+## 3. Asset Management (Radio Piratona)
+- **Audio Repository**: Integrated support for local music and broadcast assets.
+- **Pathing**: Default asset path configured to `E:\musica\x4ra_ara` for high-fidelity audio integration.
+- **Workflow**: Creative agents utilize these assets for game atmosphere and lore broadcasting.
+
+## 4. Operational Modes
 
 ### 3.1 Ghost Mode (Offline)
 - Uses local LLMs (e.g., Llama 3 via Ollama/LocalAI).
@@ -38,7 +43,7 @@ Amigo/X4ra is a decentralized, hybrid AI system designed for advanced research, 
 ### 3.3 Hybrid Mode (Default)
 - Dynamic task routing based on complexity, cost, and privacy requirements.
 
-## 4. Security & Ethics
+## 5. Security & Ethics
 - **Sandboxing**: Agents run in isolated environments.
 - **Privacy**: Local-first data storage.
 - **Auditability**: Detailed logs of all agent actions and communications.

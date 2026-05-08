@@ -1,10 +1,12 @@
 from typing import Dict, List, Optional
 from src.agents.base_agent import BaseAgent, Task
 from src.memory.memory_manager import MemoryManager
+from src.utils.config import load_config
 
 class Orchestrator:
     def __init__(self, memory_manager: MemoryManager):
         self.agents: Dict[str, BaseAgent] = {}
+        self.config = load_config()
         self.memory = memory_manager
         self.task_history: List[Task] = []
 
