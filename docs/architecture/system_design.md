@@ -15,6 +15,7 @@ Amigo/X4ra is a decentralized, hybrid AI system designed for advanced research, 
 - **Reasoning Agent**: Planning, strategic logic, and high-level decision making.
 - **Coding Agent**: Software engineering, debugging, and codebase management.
 - **Creative Agent**: Narrative design, asset conceptualization (art/audio), and world-building.
+- **Unika (Developer Agent)**: Specialized in system design, combat mechanics, and core engine implementation.
 - **Auditor Agent**: Quality control, safety checks, and consistency validation.
 - **Producer Agent**: Project management and game development pipeline coordination.
 
